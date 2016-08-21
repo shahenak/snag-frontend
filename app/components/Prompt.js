@@ -5,6 +5,7 @@ var username = require('../styles').username;
 var message = require('../styles').message;
 var date = require('../styles').date;
 var container = require('../styles').container;
+var link = require('../styles').link;
 
 function puke (object) {
   return <pre>{JSON.stringify(object, null, " ")}</pre>
@@ -21,7 +22,8 @@ function Prompt (props) {
             <div className='container' style={container} key={i}>
               <div style={username}><strong>{tag.username}</strong></div>
               <div style={message}>{tag.message}</div>
-              <div style={date}>{tag.date}</div>
+              <div style={date}>{(tag.date).slice(0,10)}</div>
+              <a style={link} href={tag.url}>Reply</a>
             </div>
           )
         })}

@@ -5,7 +5,7 @@ var styles = {
   container: {
     'backgroundColor':'white',
     'margin':'24px auto',
-    'padding':'16px 0',
+    'padding':'16px',
     'width':'60%',
     'border':'0.3px solid lightgray'
   },
@@ -22,7 +22,12 @@ var styles = {
   },
   date: {
     'font-size': '14px',
-    'color': 'rgba(0,0,0,0.5)'
+    'color': 'rgba(0,0,0,0.5)',
+    'margin-bottom':'8px'
+  },
+  link: {
+    'color': '#13829B',
+    'fontSize':'16px',
   }
 };
 
